@@ -2,7 +2,7 @@
     "name": "bdogan/yandex-mail-api",
     "autoload": {
         "psr-0" : {
-            "YandexMail" : "src"
+            "YandexMail" : "YandexMail/"
         }
     }
 }
