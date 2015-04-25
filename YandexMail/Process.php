@@ -7,7 +7,7 @@ use Exception;
 class Process {
 
   //api url
-  protected $host = 'pddimp.yandex.ru';
+  protected $host = 'api.kurum.yandex.com.tr';
 
   //use ssl
   protected $use_ssl = true;
