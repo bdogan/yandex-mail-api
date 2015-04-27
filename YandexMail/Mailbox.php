@@ -16,9 +16,9 @@ class Mailbox extends Process {
     return $this->send($url, $params);
   }
 
-  public function edit($domain, $login, $uid, $optional_parameters = array()) {
+  public function edit($domain, $uid, $optional_parameters = array()) {
     $url = $this->api_url('email', 'edit');
-    $params = array('domain' => $domain, 'login' => $login, 'uid' => $uid);
+    $params = array('domain' => $domain, 'uid' => $uid);
     $params = array_merge($params, $optional_parameters);
     return $this->send($url, $params, 'POST');
   }
