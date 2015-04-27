@@ -23,9 +23,9 @@ class Mailbox extends Process {
     return $this->send($url, $params, 'POST');
   }
 
-  public function del($domain, $login, $uid) {
+  public function del($domain, $uid) {
     $url = $this->api_url('email', 'del');
-    $params = array('domain' => $domain, 'login' => $login, 'uid' => $uid);
+    $params = array('domain' => $domain, 'uid' => $uid);
     return $this->send($url, $params, 'POST');
   }
 
